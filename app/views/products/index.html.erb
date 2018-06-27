@@ -1,20 +1,12 @@
 <div class="container">
 <h1>Pop Shop Goodies </h1>
-
-  <table>
-    <tr>
-      <th>Title</th>
-      <th>Text</th>
-      <th></th>
-    </tr>
-
     <div class="cards">
       <div class="row">
       <% @products.each do |product| %>
         <div class="col-xs=12 col-sm-4">
           <tr>
             <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path products_helper(product) %>') ">
-              <div class="card-description"><h2 class="product_title"><%= link_to product.title, product_path(product) %></h2>
+              <div class="card-description"><h2 class="product-title"><%= link_to product.title, product_path(product) %></h2>
                 <h3 class="description">
                 <%= product.description %>
                   <p class="price">
