@@ -12,8 +12,9 @@ class ProductsController < ApplicationController
     @product = Product.new
   end
 
-  # def edit
-  # end
+  def edit
+    @product = Product.find(params[:id])
+  end
 
   def create
     @product = Product.new(product_params)
@@ -25,8 +26,12 @@ class ProductsController < ApplicationController
   # def update
   # end
 
-  # def destroy
-  # end
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+
+    redirect_to products_path
+  end
 
   private
 
