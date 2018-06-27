@@ -1,6 +1,10 @@
 <h1>Show Page</h1>
 <p> Displays a specific product </p>
 
+<% if @product.photo.present? %>
+  <%= cl_image_tag @product.photo, height: 200, width: 300, crop: :fill %>
+<% end %>
+
 <p>
   <strong>Title:</strong>
   <%= @product.title %>
@@ -12,8 +16,7 @@
 </p>
 
 <p>
-  <strong>image_url:</strong>
-  <%= @product.image_url %>
+  <% @product.photo %>
 </p>
 
 <p>
