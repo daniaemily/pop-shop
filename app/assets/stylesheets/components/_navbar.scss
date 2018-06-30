@@ -15,15 +15,19 @@
   margin-top: -43%;
 }
 
-.navbar-item avatar {
-  border-radius: 50%;
-}
-
 .navbar-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 8px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+}
+
+.navbar-item.avatar img {
+  border-radius: 50%;
 }
 
 .navbar-item {
@@ -68,4 +72,8 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+
+.navbar-link a {
+  text-decoration: none;
 }

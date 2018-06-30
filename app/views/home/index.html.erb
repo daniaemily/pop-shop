@@ -1,3 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<%= cl_image_tag("purse1.jpg", width: 400, height: 300, crop: :fill) %>
+<div class="container">
+  <div class="row">
+    <h1>Home#index</h1>
+    <h1>Pop Shop</h1>
+    <h3>Specialty gifts from all over the world</h3>
+    <p>Forgot to buy that special someone a gift on your travels? We got you covered with rare gifts from around the world to make your friends and family feel loved. Turn that Oops into an Ohh lala</p>
+    <%= cl_image_tag("purse1.jpg", width: 400, height: 300, crop: :fill) %>
+    <h2 ><%= link_to 'All Products', products_path %></h2>
+  </div>
+</div>
+
