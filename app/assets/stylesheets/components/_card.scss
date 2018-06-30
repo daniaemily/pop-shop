@@ -31,7 +31,8 @@
 }
 .card-description h3 {
   font-size: 13px;
-  font-family: 'Poiret One';
+  font-family: 'Work Sans', sans-serif;
+  margin-top: 6%;
 }
 
 .card-description p {
@@ -53,13 +54,20 @@
   opacity: 0.1;
 }
 
-.product-title {
+.product-title a {
   font-size: 22px;
   margin-bottom: -7%;
+  font-family: 'Rubik', sans-serif;
+  color: white;
 }
 
 .product-title a:hover {
   text-decoration: none;
   color: red;
   padding-right: none;
+}
+
+.price {
+  margin-top: 3%;
+  font-family: 'Work Sans', sans-serif;
 }
