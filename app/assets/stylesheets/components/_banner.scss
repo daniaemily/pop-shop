@@ -1,0 +1,40 @@
+// .banner h1 {
+//   color: red;
+//   text-align: center;
+// }
+// .cover-img {
+//   background-size: cover;
+//   display: flex;
+//   height: 100vh;
+//   text-align: center;
+// }
+
+.banner {
+  background-image: linear-gradient(rgba(36, 64, 104, 0.5), rgba(36, 64, 104, 0.5)), url(../../images/bonfire.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+@media(max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media(max-width: 480px) {
+  .container {
+    width: 350px;
+  }
+}
