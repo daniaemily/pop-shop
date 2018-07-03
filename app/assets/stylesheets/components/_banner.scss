@@ -10,16 +10,38 @@
 // }
 
 .banner {
-  background-image: linear-gradient(rgba(36, 64, 104, 0.5), rgba(36, 64, 104, 0.5)), url(../../images/bonfire.jpg);
+  background-image: linear-gradient(rgba(36, 64, 104, 0.5), rgba(36, 64, 104, 0.5)), url(../fireworks.jpg);
   background-size: cover;
   background-position: center;
   padding: 70px 0px;
+  color: black;
 }
 
-.container {
-  width: 900px;
-  margin: 0 auto;
+.text-block {
+  position: relative;
+  bottom: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 1px;
 }
+.header_logo {
+  text-align: center;
+  padding-top: 4px;
+  p {
+    letter-spacing: 3px;
+  }
+}
+
+.product-showcase {
+  background-color: red;
+}
+
+.product-showcase2{
+  background-color: green;
+}
+
 
 @media(max-width: 992px) {
   .container {
@@ -38,3 +60,4 @@
     width: 350px;
   }
 }
+
