@@ -6,26 +6,29 @@
   <div class="banner">
     <div class="container">
       <div class="text-block">
-          <h3>Specialty gifts from all over the world</h3>
-            <p>Forgot to buy that special someone a gift on your travels? We got you covered with rare gifts from around the world to make your friends and family feel loved. Turn that Oops into an Ohh lala</p>
-            <h2 ><%= link_to 'All Products', products_path %></h2>
-        </div>
+        <h3>Specialty gifts from all over the world</h3>
+          <p>Forgot to buy that special someone a gift on your travels? We got you covered with rare gifts from around the world to make your friends and family feel loved. Turn that Oops into an Ohh lala</p>
+      </div>
+      <div class="start-shopping-link"><h2 ><%= link_to 'All Products', products_path %></h2>
       </div>
     </div>
-    <div class="container">
-      <%= cl_image_tag("purse1.jpg", width: 400, height: 300, crop: :fill) %>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+  </div>
+  <div class="container">
+    <div class="product-showcase">
+      <%= cl_image_tag("cupcakes2.jpg", width: 688, height: 443, crop: :fill) %>
+      <%= cl_image_tag("purse9.jpg", width: 443, height: 443, crop: :fill) %>
     </div>
-    <div class="container">
-      <div class="product-showcase">
-        <h2>More stuff</h2>
-      </div>
+  </div>
+  <div class="container">
+    <div class="product-showcase1">
+      <%= cl_image_tag("feiyue_shoes.jpg", width: 443, height: 443, crop: :fill) %>
+      <%= cl_image_tag("coffee.jpg", width: 688, height: 443, crop: :fill) %>
     </div>
-    <div class="container">
-      <div class="product-showcase2">
-        <h2>Extra stuff More stuff</h2>
-      </div>
+  </div>
+  <div class="container">
+    <div class="product-showcase2">
+      <h2>Extra stuff More stuff</h2>
     </div>
+  </div>
 </body>
 

@@ -10,7 +10,7 @@
 // }
 
 .banner {
-  background-image: linear-gradient(rgba(36, 64, 104, 0.5), rgba(36, 64, 104, 0.5)), url(../fireworks.jpg);
+  background-image: linear-gradient(rgba(36, 64, 104, 0.5), rgba(36, 64, 104, 0.5)), url(../desert.jpg);
   background-size: cover;
   background-position: center;
   padding: 70px 0px;
@@ -20,8 +20,8 @@
 .text-block {
   position: relative;
   bottom: 20px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 1px;
@@ -35,11 +35,22 @@
 }
 
 .product-showcase {
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.product-showcase1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
 }
 
 .product-showcase2{
+  display: flex;
+  justify-content: space-between;
   background-color: green;
+  padding-top: 2%;
 }
 
 
