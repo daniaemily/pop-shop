@@ -1,0 +1,74 @@
+// .banner h1 {
+//   color: red;
+//   text-align: center;
+// }
+// .cover-img {
+//   background-size: cover;
+//   display: flex;
+//   height: 100vh;
+//   text-align: center;
+// }
+
+.banner {
+  background-image: linear-gradient(rgba(36, 64, 104, 0.5), rgba(36, 64, 104, 0.5)), url(../desert.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 70px 0px;
+  color: black;
+}
+
+.text-block {
+  position: relative;
+  bottom: 20px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 1px;
+}
+.header_logo {
+  text-align: center;
+  padding-top: 4px;
+  p {
+    letter-spacing: 3px;
+  }
+}
+
+.product-showcase {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.product-showcase1 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+}
+
+.product-showcase2{
+  display: flex;
+  justify-content: space-between;
+  background-color: green;
+  padding-top: 2%;
+}
+
+
+@media(max-width: 992px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media(max-width: 480px) {
+  .container {
+    width: 350px;
+  }
+}
+

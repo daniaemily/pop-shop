@@ -13,6 +13,7 @@
 .navbar-brand img {
   height: 50px;
   margin-top: -43%;
+  border-radius: 2px;
 }
 
 .navbar-right {
@@ -23,6 +24,12 @@
 }
 
 .navbar-right a {
+  text-decoration: none;
+  color: #616668;
+  font-weight: 400;
+}
+
+.navbar-right a:hover{
   text-decoration: none;
 }
 

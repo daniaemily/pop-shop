@@ -1,11 +1,34 @@
-<div class="container">
-  <div class="row">
-    <h1>Home#index</h1>
+<body>
+  <div class="header_logo">
     <h1>Pop Shop</h1>
-    <h3>Specialty gifts from all over the world</h3>
-    <p>Forgot to buy that special someone a gift on your travels? We got you covered with rare gifts from around the world to make your friends and family feel loved. Turn that Oops into an Ohh lala</p>
-    <%= cl_image_tag("purse1.jpg", width: 400, height: 300, crop: :fill) %>
-    <h2 ><%= link_to 'All Products', products_path %></h2>
+    <p>Miami</p>
   </div>
-</div>
+  <div class="banner">
+    <div class="container">
+      <div class="text-block">
+        <h3>Specialty gifts from all over the world</h3>
+          <p>Forgot to buy that special someone a gift on your travels? We got you covered with rare gifts from around the world to make your friends and family feel loved. Turn that Oops into an Ohh lala</p>
+      </div>
+      <div class="start-shopping-link"><h2 ><%= link_to 'All Products', products_path %></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="product-showcase">
+      <%= cl_image_tag("cupcakes2.jpg", width: 688, height: 443, crop: :fill) %>
+      <%= cl_image_tag("purse9.jpg", width: 443, height: 443, crop: :fill) %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="product-showcase1">
+      <%= cl_image_tag("feiyue_shoes.jpg", width: 443, height: 443, crop: :fill) %>
+      <%= cl_image_tag("coffee.jpg", width: 688, height: 443, crop: :fill) %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="product-showcase2">
+      <h2>Extra stuff More stuff</h2>
+    </div>
+  </div>
+</body>
 
