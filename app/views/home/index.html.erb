@@ -4,18 +4,20 @@
     <p>Miami</p>
   </div>
   <div class="banner">
-    <div class="container">
+    <div class="container banner1">
       <div class="text-block">
         <h3>Specialty gifts from all over the world</h3>
-          <p>Forgot to buy that special someone a gift on your travels? We got you covered with rare gifts from around the world to make your friends and family feel loved. Turn that Oops into an Ohh lala</p>
+          <p>Forgot to buy that special someone a gift on your travels? Turn that Oops into an Ohh lala</p>
       </div>
-      <div class="start-shopping-link"><h2 ><%= link_to 'All Products', products_path %></h2>
+      <div class="start-shopping-link"><h2 ><%= link_to 'Start Shopping', products_path %></h2>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="product-showcase">
-      <%= cl_image_tag("cupcakes2.jpg", width: 688, height: 443, crop: :fill) %>
+      <%= cl_image_tag("cupcakes2.jpg", :transformation=>[
+        {:width=>688, :height=>443, :crop=>"fill"}, {:overlay=>"text:arial_25:Gourmet%20Food", :gravity=>"north", :y=>20}
+        ]) %>
       <%= cl_image_tag("purse9.jpg", width: 443, height: 443, crop: :fill) %>
     </div>
   </div>
