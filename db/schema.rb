@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 2018_07_06_230254) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
+    t.integer "order_id"
+    t.index ["order_id"], name: "index_products_on_order_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -15,3 +15,16 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.modal {
+  background-color: rgba(204, 154, 154, 0.14);
+}
+
+.alert, .notice {
+  position: absolute;
+  top: 0px;
+}
+
+.ps-content {
+  margin-top: 64px;
+}
