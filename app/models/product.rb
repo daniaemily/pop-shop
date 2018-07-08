@@ -7,4 +7,6 @@ class Product < ApplicationRecord
   validates :photo, presence: true
   validates :asking_price_cents, presence: true
   validates :title, presence: true
+  validates :description, length: { maximum: 44,
+      too_long: "%{count} characters is the maximum allowed" }
 end

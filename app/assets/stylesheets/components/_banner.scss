@@ -17,14 +17,21 @@
   color: black;
 }
 
+.banner1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .text-block {
   position: relative;
-  bottom: 20px;
+  bottom: 2px;
   background-color: white;
   color: black;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 1px;
+  margin-right: 230px;
+  align-items: center;
 }
 .header_logo {
   text-align: center;
@@ -49,10 +56,28 @@
 .product-showcase2{
   display: flex;
   justify-content: space-between;
-  background-color: green;
+  background-color: pink;
   padding-top: 2%;
 }
 
+.container.banner1 a {
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  padding: 9px 11px;
+  font-weight: 400;
+}
+
+.start-shopping-link {
+  margin-top: 5px;
+}
+
+.container.banner1 a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 2px;
+}
 
 @media(max-width: 992px) {
   .container {
