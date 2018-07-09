@@ -1,2 +1,7 @@
-<h1>Edit Page</h1>
-<p>This route is used to make any changes to the product</p>
+<div class="container">
+  <div class="editing">
+  <h1>Edit Product</h1>
+  <%= render "new_product_form" %>
+  <button type="button" class="edit-btn"><%= link_to "Nevermind everything looks great!", product_path %></button>
+  </div>
+</div>

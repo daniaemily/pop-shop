@@ -1,0 +1,30 @@
+.product-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 142px;
+  font-size: 28px;
+}
+
+.show-essential {
+  display: inline-flex;
+  align-items: center;
+}
+
+.show-title h1 {
+  margin-bottom: 26px;
+}
+
+.modal-body {
+  text-align: right;
+  font-weight: lighter;
+  font-size: 21px;
+}
+
+.modal-title {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+#PSModalTitle {
+  margin-left: 156px;
+}

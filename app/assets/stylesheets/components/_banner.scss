@@ -32,6 +32,7 @@
   border-radius: 1px;
   margin-right: 230px;
   align-items: center;
+  border-radius: 2px;
 }
 .header_logo {
   text-align: center;
@@ -45,6 +46,31 @@
   display: flex;
   justify-content: space-between;
   padding-top: 2%;
+}
+
+.product-showcase h2 {
+  position: absolute;
+  color: white;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.product-showcase1 h2 {
+  position: absolute;
+  color: black;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+h2.large-banner-pic {
+  padding-left: 18px;
+}
+
+h2.small-banner-pic {
+  padding-left: 18px;
+}
+.product-showcase p {
+  position: absolute;
 }
 
 .product-showcase1 {
