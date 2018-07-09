@@ -1,8 +1,6 @@
-
 <div class="container">
   <div class="show-title">
     <h1><%= @product.title %></h1>
-    <p> Displays a specific product </p>
   </div>
   <div>
   </div>
@@ -22,7 +20,6 @@
       <p>$
         <%= @product.asking_price %>
       </p>
-    </div>
 
     <!-- Modal -->
     <!-- Button trigger modal -->
@@ -31,28 +28,31 @@
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Give me that Paper Paper Paper</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p><%= @product.title %></p>
-            <p><%= @product.asking_price %></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="PSModalTitle">SHOPPING BAG</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p><b><%= @product.title %></b></p>
+              <p>Qty 1</p>
+              <p><b>$<%= @product.asking_price %></b></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
+              <button type="button" class="btn btn-primary">Proceed to Payment</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+<h3 ><%= link_to 'Edit', edit_product_path %></h3>
 
 <script>
   document.onready(function() {

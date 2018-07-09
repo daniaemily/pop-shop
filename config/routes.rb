@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :orders, only: [:show, :create, :new]
+  resources :orders, only: [:index, :show, :create, :new]
 
   #get 'home/index'
   devise_for :users, :skip => :registerable
