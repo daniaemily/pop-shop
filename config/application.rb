@@ -1,4 +1,7 @@
 require_relative 'boot'
+require 'sqlite3'
+require 'yaml'
+require 'active_record'
 
 require 'rails/all'
 
