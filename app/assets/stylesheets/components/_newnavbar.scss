@@ -14,6 +14,7 @@
 .ps-navbar-items a {
   margin-left: 19px;
   color: #333333;
+  margin-right: 0px;
 }
 
 .ps-navbar-items a:hover {
@@ -24,4 +25,57 @@
 .ps-navbar img {
   margin: 8px 0;
   padding-top: 5px;
+}
+
+
+.menu {
+  margin-right: 10px;
+}
+
+.mobile-menu {
+  i {
+    color: white;
+  }
+  ul {
+    padding: 0px;
+  }
+  a {
+    display: block;
+    padding: 10px 0px 10px 25px !important;
+  }
+  a:hover {
+    background: white !important;
+    color: black !important;
+    i {
+      color: black;
+    }
+  }
+}
+
+.icon-bar {
+  background-color: white !important;
+}
+
+.active a {
+  background: red !important;
+  border-bottom: solid 5px white;
+}
+
+.dropdown-toggle, .dropdown-menu {
+  background: red !important;
+  border: none;
+}
+
+.dropdown-menu a:hover {
+  color: black !important;
+  background: white !important;
+}
+
+.nav.navbar-nav {
+  float: right;
+}
+
+#navbar-collapsible-content {
+  margin-left: 0px;
+  margin-right: 0px;
 }

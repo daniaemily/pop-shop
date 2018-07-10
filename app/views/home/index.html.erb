@@ -5,44 +5,46 @@
   </div>
   <div class="banner">
     <div class="container banner1">
-      <div class="text-block">
-        <h3>Specialty gifts from all over the world</h3>
-          <p>Forgot to buy that special someone a gift on your travels? Turn that Oops into an Ohh lala</p>
+        <div class="text-block">
+          <h3>Specialty gifts from all over the world</h3>
+            <p>Forgot to buy that special someone a gift on your travels? Turn that Oops into an Ohh lala</p>
+        </div>
+        <div class="start-shopping-link"><h2 ><%= link_to 'New Arrivals', products_path %></h2>
+        </div>
       </div>
-      <div class="start-shopping-link"><h2 ><%= link_to 'New Arrivals', products_path %></h2>
+    </div>
+    <div class="container">
+      <div class="product-showcase">
+        <%= link_to products_path do %>
+          <h2 class="large-banner-pic">Delicacy</h2>
+            <%= cl_image_tag("cupcakes2.jpg", :transformation=>[
+            {:width=>688, :height=>384, :crop=>"fill"}
+            ]) %>
+        <% end %>
+        <%= link_to products_path do %>
+          <h2 class="small-banner-pic">Splurge</h2>
+            <%= cl_image_tag("purse9.jpg", width: 384, height: 384, crop: :fill) %>
+        <% end %>
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="product-showcase">
-      <%= link_to products_path do %>
-        <h2 class="large-banner-pic">Delicacy</h2>
-          <%= cl_image_tag("cupcakes2.jpg", :transformation=>[
-          {:width=>688, :height=>384, :crop=>"fill"}
-          ]) %>
-      <% end %>
-      <%= link_to products_path do %>
-        <h2 class="small-banner-pic">Splurge</h2>
-          <%= cl_image_tag("purse9.jpg", width: 384, height: 384, crop: :fill) %>
-      <% end %>
+    <div class="container">
+      <div class="product-showcase1">
+        <%= link_to products_path do %>
+          <h2 class="small-banner-pic">Indulge</h2>
+        <%= cl_image_tag("feiyue_shoes.jpg", width: 384, height: 384) %>
+        <% end %>
+        <%= link_to products_path do %>
+          <h2 class="large-banner-pic">Gourmet Beans</h2>
+        <%= cl_image_tag("coffee.jpg", width: 688, height: 384, crop: :fill) %>
+        <% end %>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="product-showcase1">
-      <%= link_to products_path do %>
-        <h2 class="small-banner-pic">Indulge</h2>
-      <%= cl_image_tag("feiyue_shoes.jpg", width: 384, height: 384) %>
-      <% end %>
-      <%= link_to products_path do %>
-        <h2 class="large-banner-pic">Gourmet Beans</h2>
-      <%= cl_image_tag("coffee.jpg", width: 688, height: 384, crop: :fill) %>
-      <% end %>
+    <div class="container">
+      <div class="product-showcase2">
+        <h2>Extra stuff More stuff</h2>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="product-showcase2">
-      <h2>Extra stuff More stuff</h2>
-    </div>
-  </div>
+    div
 </body>
 
