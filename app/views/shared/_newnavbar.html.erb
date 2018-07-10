@@ -4,13 +4,18 @@
       <%= image_tag "popshop-logo.png", alt:"Pop Shop logo", height: "40px" %>
     </a>
   </div>
-  <div class="ps-navbar-items" style="width: 700px">
-    <%= link_to products_path do %>
-      <i class=" fas fa-search"></i> Discover
-    <% end %>
-    <%= link_to orders_path do %>
-      <i class=" fas fa-shopping-bag"></i> Purchase History
-    <% end %>
+  <!-- <div class="ps-navbar-items" style="width: 700px"> -->
+  <div class="ps-navigation">
+    <div>
+     <%= link_to products_path do %>
+        <i class=" fas fa-search"></i>  Discover
+      <% end %>
+      <%= link_to orders_path do %>
+        <i class=" fas fa-shopping-bag"></i>  Purchase History
+      <% end %>
+    </div>
+    <div>
+      <%= render "shared/user_dropdown" %>
+    </div>
   </div>
-  <%= render "shared/collapsible_elements" %>
 </div>
