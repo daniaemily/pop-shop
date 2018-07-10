@@ -8,6 +8,7 @@ gem 'cloudinary'
 gem 'figaro'
 
 gem 'autoprefixer-rails'
+gem 'bootstrap_form'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'devise'
 gem 'font-awesome-sass', '~> 5.0.9'
