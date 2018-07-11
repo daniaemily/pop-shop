@@ -16,14 +16,11 @@
   align-items: center;
 
   a {
-    color: #333333;
+    // color: #333333;
     margin-right: 8px;
     &:hover {
       text-decoration: none;
-      color: white;
-      background-color: #333333;
-      border-radius: 2px;
-      padding: 3px;
+      // color: #333333;
     }
   }
 }
