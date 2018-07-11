@@ -42,3 +42,14 @@
   background: #333333;
   border-bottom: solid 5px white;
 }
+
+.btn-secondary.dropdown-toggle {
+  background-color: pink;
+  border-color: pink;
+}
+
+.show>.btn-secondary.dropdown-toggle {
+  color: pink;
+  background-color: white;
+  border-color: pink;
+}

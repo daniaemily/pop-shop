@@ -5,3 +5,17 @@
 .order-confirmation p {
   margin-top: 15px
 }
+
+.ps-payment a {
+  color: white;
+}
+
+.ps-payment:hover a {
+  color: pink;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: pink;
+  border-color: pink;
+}
