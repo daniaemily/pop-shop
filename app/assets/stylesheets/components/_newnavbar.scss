@@ -20,14 +20,16 @@
     margin-right: 8px;
     &:hover {
       text-decoration: none;
-      color: pink;
+      color: white;
+      background-color: #333333;
+      border-radius: 2px;
+      padding: 3px;
     }
   }
 }
 .ps-navbar img {
   margin: 8px 0;
-  padding-top: 5px;
-}
+  padding-top: 5pxblack}
 
 
 .menu {
@@ -44,12 +46,24 @@
 }
 
 .btn-secondary.dropdown-toggle {
-  background-color: pink;
-  border-color: pink;
+  background-color: #333333;
+  border-color: #333333;
 }
 
 .show>.btn-secondary.dropdown-toggle {
-  color: pink;
-  background-color: white;
-  border-color: pink;
+  color: white;
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn.focus {
+  color: white;
 }

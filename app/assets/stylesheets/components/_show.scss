@@ -28,3 +28,12 @@
 #PSModalTitle {
   margin-left: 156px;
 }
+
+h3 a {
+  color: black;
+  &:hover {
+    color: gray;
+    text-decoration: none;
+
+  }
+}
