@@ -12,8 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2018_07_06_230254) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "orders", force: :cascade do |t|
-    t.integer "users_id"
+    t.bigint "users_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["users_id"], name: "index_orders_on_users_id"
@@ -29,7 +32,7 @@ ActiveRecord::Schema.define(version: 2018_07_06_230254) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
-    t.integer "order_id"
+    t.bigint "order_id"
     t.index ["order_id"], name: "index_products_on_order_id"
   end
 
@@ -51,4 +54,6 @@ ActiveRecord::Schema.define(version: 2018_07_06_230254) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "orders", "users", column: "users_id"
+  add_foreign_key "products", "orders"
 end
