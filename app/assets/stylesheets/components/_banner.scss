@@ -10,7 +10,7 @@
 // }
 
 .banner {
-  background-image: linear-gradient(rgba(36, 64, 104, 0.5), rgba(36, 64, 104, 0.5)), url(../desert.jpg);
+  background-image: linear-gradient(rgba(36, 64, 104, -3.5), rgba(36, 64, 104, 0.5)), url(../desert.jpg);
   background-size: cover;
   background-position: center;
   padding: 70px 0px;
@@ -25,7 +25,6 @@
 .text-block {
   position: relative;
   bottom: 2px;
-  background-color: white;
   color: black;
   padding-left: 20px;
   padding-right: 20px;
@@ -33,6 +32,7 @@
   margin-right: 230px;
   align-items: center;
   border-radius: 2px;
+  text-shadow: 2px 0px 13px rgba(63,37,94, 0.5);
 }
 .header_logo {
   text-align: center;
@@ -87,8 +87,8 @@ h2.small-banner-pic {
 }
 
 .container.banner1 a {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   border-radius: 2px;
   padding: 9px 11px;
   font-weight: 400;
