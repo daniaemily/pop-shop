@@ -10,7 +10,7 @@
 // }
 
 .banner {
-  background-image: linear-gradient(rgba(36, 64, 104, -3.5), rgba(36, 64, 104, 0.5)), url(../desert.jpg);
+  background-image: linear-gradient(rgba(36, 64, 104, -3.5), rgba(36, 64, 104, 0.5)), url(http://res.cloudinary.com/dahnkneeah/image/upload/v1531409823/desert.jpg);
   background-size: cover;
   background-position: center;
   padding: 70px 0px;
@@ -62,8 +62,17 @@
   font-weight: normal;
 }
 
+h2-a:hover {
+  color:red;
+}
+
 h2.large-banner-pic {
   padding-left: 18px;
+}
+
+img:hover {
+  border: 1px solid #dcd7d6;
+  transition: all .2s ease-in-out;
 }
 
 h2.small-banner-pic {

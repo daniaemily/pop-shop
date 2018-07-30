@@ -14,7 +14,9 @@
       class: "dropdown-item" %>
     </div>
   </div>
-<% else # user not signed it %>
-  <%= link_to 'Login', login_path %>
-  <%= link_to 'Signup', signup_path %>
+  <% else # user not signed it %>
+    <i class="fas fa-lock"></i>
+    <%= link_to 'Login', login_path %>
+    <i class="fas fa-user-circle"></i>
+    <%= link_to 'Signup', signup_path %>
 <% end # if user is signed it %>

@@ -14,13 +14,14 @@
 .ps-navigation {
   display: flex;
   align-items: center;
+  color: gray;
 
   a {
-    color: #333333;
+    color: gray;
     margin-right: 8px;
     &:hover {
       text-decoration: none;
-      color: #6c757d;
+      color: dark-gray;
     }
   }
 }
@@ -48,8 +49,12 @@
   border-color: white;
 }
 
+.btn-secondary.dropdown-toggle:hover {
+  background-color: white;
+  border-color: #333333;
+}
 .show>.btn-secondary.dropdown-toggle {
   color: white;
-  background-color: white;
+  background-color: #333333;
   border-color: #333333;
 }
