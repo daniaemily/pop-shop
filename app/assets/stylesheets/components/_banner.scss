@@ -62,8 +62,17 @@
   font-weight: normal;
 }
 
+h2-a:hover {
+  color:red;
+}
+
 h2.large-banner-pic {
   padding-left: 18px;
+}
+
+img:hover {
+  border: 1px solid #dcd7d6;
+  transition: all .2s ease-in-out;
 }
 
 h2.small-banner-pic {
